@@ -2,28 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi página</title>
+    <title>FUNDAMENTOS HTML</title>
 
     <!-- Icono de la pestaña -->
     <link rel="icon" href="img/icono.png.png" type="image/png">
 </head>
 <body>
+    <header>
+        <h1>Fundamentos de HTML</h1>
+        <p> HTML es un lenguaje de marcado utilizado para crear páginas web.
+            Permite estructurar el contenido y definir su presentación.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#anatomia">Elementos</a></li>
+                <li><a href="#contenido">Contenido en HTML</a></li>
+                <li><a href="#Semantico">Semantica</a></li>
+                <li><a href="#contenedores"> div vs span</a></li>
+                <li><a href="#formularios ">Formularios</a></li>
+                <li><a href="#practicas ">Buenas practicas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="anatomia">
+            <hr>
+            <h2>Anatomia de un elemento</h2>
+            <p>Un elemento de HTML consta de una etiqueta de apertura, contenido y una etiqueta de cierre. Por ejemplo:</p>
+            <strong>
+                <pre><code>&lt;h1&gt;Titulo principal&lt;/h1&gt;</code></pre>
+            </strong>
+            <p>En este caso, <strong><code>&lt;h1&gt;</code></strong>es la etiqueta de apertura¨Titulo principal¨ es el contenido <code>&lt;/h1&gt;</code></p>
+            <div class="tip">
+                Los atributos proporcionan informacion extra.
+                Ejemplo: <strong>class="nota"</strong>
+            </div>
+            <hr>
+        </section>
 
-    <h1>Bienvenido a mi página</h1>
-
-    <!-- Imágenes -->
-    <img src="img/imagen1.jpg.png" alt="CAPTURA" width="100">
-    <br><br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCt8etsM3EKVtY-E8xL2bMtOLtiOijZMjudDAC5qaNHwOwdlwCUvqjfn-8tJvRIhQ6jstOHyr43EbUcut6iSY65b47XX4_vJUNgsHAQs&s=10" alt="TERMINAL" width="100">
-    <br><br>
-    <video width="200" height="200" controls>
-        <source src="img/video.mp4" type="video/mp4">
-    </video>
-
-    <!-- Botón a Google -->
-    <a href="https://www.google.com" target="_blank">
-        <button>Ir a Google</button>
-    </a>
+        <section id="contenido">
+            <h2>Contenido HTML</h2>
+            <hr>
+            <p>el contenido de html puede ser texto, imagenes, enlaces, listas tablas y otros elementos de multimedia </p>
+            <h3>Enlaces</h3>
+            <br>
+            <a href="https://www.google.com">Este es un enlace externo.</a>
+            <br>
+            <a href="anatonomia">Esto es un enlace interno</a>
+            <br>
+            <a href="otro.html">Este es un enlace a otro html</a>
+            <br>
+            <a href="otro.html#mexico">Este es un enlace  a una seccion en otro htmlen la misma carpata.</a>
+            
+            <h3>imagen accesible</h3>
+            <img src="./img/icono.png.png" alt="esta es mi imagen 1" width="200">
+            <h3>listas</h3>
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </section>
+    </main>
 
 </body>
 </html>
