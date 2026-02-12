@@ -6,6 +6,8 @@
 
     <!-- Icono de la pestaña -->
     <link rel="icon" href="img/icono.png.png" type="image/png">
+     <!-- Hoja de estilo-->
+      <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
     <header>
@@ -84,9 +86,57 @@
             <div class="tip">
                  No uses div para tod, elige la etiqueta adecauada.Recuerda que el HTML SEMANTICO mejora la accesibilidad y SEO.
             </div>
+        </section>
+        <section id="contenedores">
+            <h2>Contenedores: div vs span</h2>
+            <p><code>&lt;div&gt;</code> es un contenedor de bloque que se utiliza para agrupàr elementos y aplicar estilos o scripts o un bloque completo. es decirocupa todo el ancho disponible. Por ejemplo:</p>
+            <div class="example-div"><pre><code>&lt;div class="caja"&gt;</code></pre></div>
+            <p><code>&lt;span&gt;</code>es un contenedor en linea que se utiliza para agrupar elementos de texto y aplicar estilos o sripts es decir no ocupa todo el ancho disponible solo lo que se ocupe del elemento.</p>
+            <p><span style="color: blueviolet;font-weight: bold;background-color: rgb(71, 125, 167);"><pre><code>&lt;span class="resaltado"&gt;Texto resaltado&lt;/span&gt;</code></pre></span>fuera del span</p>
+        
+        </section>
+        <section id="Formularios">
+            <h2>Formularios en html</h2>
+            <p>Los formularios en hjtmnlse utilizan para recopilar informacion del usuario incluye campos de entrada</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre "required>
+                <br><br>
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email"required>
+                <br><br>
+                <label for="password">Contrasena:</label>
+                <input type="password" id="password" name="password"required>
+                <br><br>
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate "required>
+                <br><br>
+                <label >
+                <input type="checkbox"required>
+                acepto terminos y condiciones
+                 </label>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+                <section>
+                    <label for="practicas"></label>
+                    <h2>Buenas practicas</h2>
+                    <ul>
+                        <li>usar etiquetas semanticaspara mejora la accesibilidady SEO.</li>
+                        <li>incluir atributos ALT en la imagenes p;ara describir su contenido</li>
+                        <li>organizar  el contenido de manera clara y estructurada</li>
+                        <li>evitar el uso excesivo de div y spans usar etiquetas adecuadas</li>
+                        <li>validar el codigo html para asegurar suj correcto funcionamiento</li>
+                    </ul>
+                </section>
+            </form>
 
         </section>
     </main>
+    <footer>
+        <p>&copy;2026 mi sitio web todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
